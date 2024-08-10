@@ -4,6 +4,7 @@
   "description": "roultette test",
   "main": "index.html",
   "scripts": {
+    "preview": "vite preview",
     "build": "vite build"
   },
   "author": "yjcha",

@@ -68,3 +68,5 @@ const rouletteData_2 = [
     value: 0,
   },
 ];
+
+export {rouletteData_1, rouletteData_2};

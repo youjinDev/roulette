@@ -1,3 +1,5 @@
+import {rouletteData_1, rouletteData_2} from './rouletteData.js'
+
 // 요구사항
 // 1. 기본적으로는 1번 데이터로 룰렛을 셋팅한다
 // 2. 셀렉트 박스가 변경되면, 선택된 값으로 룰렛판을 재설정한다
@@ -12,9 +14,11 @@ const shootButton = document.getElementById("shoot-btn");
 
 const colorCache = {};
 
-const initialize = (function () {
+const initialize = function () {
   createRoulette(rouletteData_1);
-})();
+};
+
+initialize();
 
 function createRoulette(data) {
   roulette.innerHTML = "";

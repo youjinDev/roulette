@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Roulette</title>
+  </head>
+  <body>
+    <h1>룰렛 테스트</h1>
+    <div id="roulette-wrapper">
+      <div id="target-arrow"></div>
+      <div id="roulette"></div>
+    </div>
+
+    <select id="select-box" onchange="onChangeSelectBox()">
+      <option value="1">첫번째 룰렛판</option>
+      <option value="2">두번째 룰렛판</option>
+    </select>
+    <div id="result-box"></div>
+    <div class="pie"></div>
+    <button id="shoot-btn" onclick="onClickShootBtn()">SHOOT🔥</button>
+    <script src="rouletteData.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

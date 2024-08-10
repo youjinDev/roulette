@@ -1,0 +1,63 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#result-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid slategray;
+  width: 200px;
+  height: 60px;
+  margin: 20px;
+}
+
+#roulette-wrapper {
+  position: relative;
+  width: min-content;
+}
+
+#roulette {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#target-arrow {
+  position: absolute;
+  width: 13px;
+  height: 26px;
+  background-color: black;
+  z-index: 1000;
+  right: 48%;
+}
+
+.roulette-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.section-label {
+  position: absolute;
+  left: 75%;
+  top: 10%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transform-origin: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}

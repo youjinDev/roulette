@@ -140,3 +140,8 @@ function getRandomColor(index) {
   colorCache[index] = newColor;
   return newColor;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    selectBox.addEventListener('change', onChangeSelectBox);
+    shootButton.addEventListener('click', onClickShootBtn);
+  });

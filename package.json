@@ -1,0 +1,14 @@
+{
+  "name": "roulette",
+  "version": "1.0.0",
+  "description": "roultette test",
+  "main": "index.html",
+  "scripts": {
+    "build": "vite build"
+  },
+  "author": "yjcha",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
